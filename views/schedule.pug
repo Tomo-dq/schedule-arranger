@@ -12,7 +12,7 @@ block content
       label(for="shareURL") 共有用 URL:
       - var herokuURL = process.env.HEROKU_URL ? process.env.HEROKU_URL : 'http://localhost:8000/'
       input(type="text" value=`${herokuURL}schedules/${schedule.scheduleId}/`)#shareURL.form-control
-      a(href=`http://twitter.com/intent/tweet?url=${herokuURL}schedules/${schedule.scheduleId}`).btn.btn-info リンクをツイート
+      a(href=`http://twitter.com/intent/tweet?url=${herokuURL}schedules/${schedule.scheduleId}` target="_blank").btn.btn-info リンクをツイート
   if isMine
     div
       a(href=`/schedules/${schedule.scheduleId}/edit`).btn.btn-info この予定を編集する
