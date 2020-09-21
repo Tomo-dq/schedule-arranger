@@ -134,6 +134,10 @@ buttonSelfComment.click(function () {
     });
   }
 });
+var script = document.createElement('script');
+script.setAttribute('src', 'https://platform.twitter.com/widgets.js');
+var tweetarea = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#tweet-area');
+tweetarea.appendChild(script);
 
 /***/ }),
 /* 1 */
